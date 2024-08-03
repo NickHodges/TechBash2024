@@ -25,3 +25,7 @@
 
 * Display markdown content as a page
 
+## Step 7
+
+* Add a blog section via content collections
+
