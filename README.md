@@ -16,3 +16,7 @@
 ## Step 4
 
 * Integrating a layout
+
+## Step 5
+
+*Adding styles to components and the site
