@@ -19,4 +19,4 @@
 
 ## Step 5
 
-*Adding styles to components and the site
+* Adding styles to components and the site
