@@ -20,3 +20,7 @@
 ## Step 5
 
 *Adding styles to components and the site
+
+## Step 6
+
+* Display markdown content as a page
