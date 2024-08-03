@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -11,6 +13,8 @@ import '../styles/global.css';
     <title>Astro</title>
   </head>
   <body>
+    <Header title="My Cool Website"/>
     <slot />
+    <Footer />
   </body>
 </html>
