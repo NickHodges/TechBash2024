@@ -1,22 +1,14 @@
 ---
 import Basic from '../components/Basic.astro';
 import UseSlot from '../components/UseSlot.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-    <a href="page/based/routing">Go to paged based routing</a>
-    <Basic word="boomble" />
-    <UseSlot>
-      This content will be slotted into the &lt;slot&gt; tag in the UseSlot component.
-    </UseSlot>
-  </body>
-</html>
+<BaseLayout>
+  <h1>Astro</h1>
+  <a href="page/based/routing">Go to paged based routing</a>
+  <Basic word="boomble" />
+  <UseSlot>
+    This content will be slotted into the &lt;slot&gt; tag in the UseSlot component.
+  </UseSlot>
+</BaseLayout>

@@ -12,3 +12,7 @@
 ## Step 3
 
 * Components using the `<slot>` tag
+
+## Step 4
+
+* Integrating a layout
