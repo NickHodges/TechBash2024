@@ -2,7 +2,8 @@
 
 ## Step 1
 
-Show page-based routing
+* Show page-based routing
 
 ## Step 2
 
+* Basic component structure with properties
