@@ -8,3 +8,7 @@
 
 * Basic component structure
 * Basic use of props
+
+## Step 3
+
+* Components using the `<slot>` tag
