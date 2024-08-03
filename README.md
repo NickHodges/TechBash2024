@@ -6,4 +6,5 @@
 
 ## Step 2
 
-* Basic component structure with properties
+* Basic component structure
+* Basic use of props
