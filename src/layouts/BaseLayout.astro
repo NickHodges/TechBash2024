@@ -1,20 +1,18 @@
 ---
 import '../styles/global.css';
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Header title="My Cool Website"/>
-    <slot />
-    <Footer />
-  </body>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="viewport" content="width=device-width" /><meta name="generator" content={Astro.generator} /><title>Astro</title></head>
 </html>
+<body>
+  <Header title="My Cool Website" />
+  <slot />
+  <Footer />
+</body>

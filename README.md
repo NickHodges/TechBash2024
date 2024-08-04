@@ -36,3 +36,4 @@
 ## Step 9
 
 * Add a Sitemap integtration
+  * `npm install @astrojs/sitemap`
