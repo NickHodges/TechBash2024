@@ -29,3 +29,6 @@
 
 * Add a blog section via content collections
 
+## Step 8
+
+*  Add a blog post summary page
