@@ -37,3 +37,7 @@
 
 * Add a Sitemap integtration
   * `npm install @astrojs/sitemap`
+
+## Step 10
+
+* Adding logging middleware
