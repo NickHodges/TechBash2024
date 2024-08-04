@@ -32,3 +32,7 @@
 ## Step 8
 
 *  Add a blog post summary page
+
+## Step 9
+
+* Add a Sitemap integtration
