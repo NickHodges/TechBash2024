@@ -1,13 +1,18 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 
-const { frontmatter } = Astro.props;
+//const { frontmatter } = Astro.props;
+
+const {
+  frontmatter: { title, pubDate, description, author },
+} = Astro.props;
 
 ---
 
 <BaseLayout>
-  <h1>{frontmatter.title}</h1>
-  <h2>Post author: {frontmatter.author}</h2>
-  <h3>{frontmatter.description}</h3>
+  <h1>{title}</h1>
+  <h2>Post author: {author}</h2>
+  <h3>{description}</h3>
+  <h4>{pubDate}</h4>
   <slot />
 </BaseLayout>
