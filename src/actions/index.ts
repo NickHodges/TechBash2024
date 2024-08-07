@@ -9,7 +9,7 @@ export const server = {
       message: z.string(),
     }),
     handler: async ({ name, email, message }) => {
-      console.log("Received new newsletter signup:", { name, email, message });
+      console.log("Received contact form submission:", { name, email, message });
       return { success: true };
     },
   }),
