@@ -50,3 +50,8 @@
 
 * Add a basic contact form
 * Use Astro Actions to gather form data
+
+## Step 13
+
+* Write contact information to AstroDB
+
