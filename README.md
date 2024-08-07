@@ -49,3 +49,4 @@
 ## Step 12
 
 * Add a basic contact form
+* Use Astro Actions to gather form data
