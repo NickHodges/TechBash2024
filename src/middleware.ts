@@ -8,7 +8,6 @@ const logger = new ConsoleLogger();
 
 // Define the middleware function
 export const onRequest = defineMiddleware((context, next) =>  {
-  console.log('here');
   const method = context.request.method;
   const url = context.request.url;
   const timestamp = new Date().toISOString();
