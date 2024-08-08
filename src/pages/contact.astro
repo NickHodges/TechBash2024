@@ -43,11 +43,19 @@ const contacts = await db.select().from(Contacts);
 
   {
     contacts.map(({ name, email, message, timestamp }) => (
-      <article>
-        <p>Name: {name}</p>
-        <p>Email: {email}</p>
-        <p>Date: {timestamp}</p>
-        <p>Message: {message}</p>
+      <article class="card">
+        <p>
+          <strong>Name:</strong> {name}
+        </p>
+        <p>
+          <strong>Email:</strong> {email}
+        </p>
+        <p>
+          <strong>Date:</strong> {timestamp}
+        </p>
+        <p>
+          <strong>Message:</strong> {message}
+        </p>
       </article>
     ))
   }
@@ -100,5 +108,20 @@ const contacts = await db.select().from(Contacts);
 
   button:hover {
     background-color: #0056b3;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  .card p {
+    margin: 8px 0;
+  }
+  .card p strong {
+    font-weight: bold;
   }
 </style>
