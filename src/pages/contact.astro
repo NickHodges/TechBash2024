@@ -15,7 +15,6 @@ if (Astro.request.method === 'POST') {
   const message = formData.get('message');
   const timestamp = NOW;
   if (typeof name === 'string' && typeof email === 'string' && typeof message === 'string') {
-    // insert form data into the Comment table
     await db.insert(Contacts).values({ timestamp, name, email, message });
   }
 }
@@ -117,6 +116,7 @@ const contacts = await db.select().from(Contacts);
     margin: 16px;
     max-width: 100%;
     font-family: Arial, sans-serif;
+    background-color: #b5e352;
   }
   .card p {
     margin: 8px 0;
