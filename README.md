@@ -55,3 +55,9 @@
 
 * Write contact information to AstroDB
 * `npx astro add db`
+
+## Step 14
+
+* Integrate React
+  * `npx astro add react`
+* Astro Client Islands
