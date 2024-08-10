@@ -1,0 +1,504 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "quote": "I am so clever that sometimes I don't understand a single word of what I am saying.",
+      "author": "Oscar Wilde"
+    },
+    {
+      "id": 2,
+      "quote": "People say nothing is impossible, but I do nothing every day.",
+      "author": "A.A. Milne"
+    },
+    {
+      "id": 3,
+      "quote": "You can’t have everything. Where would you put it?",
+      "author": "Steven Wright"
+    },
+    {
+      "id": 4,
+      "quote": "The only mystery in life is why the kamikaze pilots wore helmets.",
+      "author": "Al McGuire"
+    },
+    {
+      "id": 5,
+      "quote": "Light travels faster than sound. This is why some people appear bright until you hear them speak.",
+      "author": "Alan Dundes"
+    },
+    {
+      "id": 6,
+      "quote": "If I were two-faced, would I be wearing this one?",
+      "author": "Abraham Lincoln"
+    },
+    {
+      "id": 7,
+      "quote": "I find television very educating. Every time somebody turns on the set, I go into the other room and read a book.",
+      "author": "Groucho Marx"
+    },
+    {
+      "id": 8,
+      "quote": "I always wanted to be somebody, but now I realize I should have been more specific.",
+      "author": "Lily Tomlin"
+    },
+    {
+      "id": 9,
+      "quote": "War is God's way of teaching Americans geography.",
+      "author": "Ambrose Bierce"
+    },
+    {
+      "id": 10,
+      "quote": "I refuse to join any club that would have me as a member.",
+      "author": "Groucho Marx"
+    },
+    {
+      "id": 11,
+      "quote": "I'm writing a book. I've got the page numbers done.",
+      "author": "Steven Wright"
+    },
+    {
+      "id": 12,
+      "quote": "Don't sweat the petty things and don't pet the sweaty things.",
+      "author": "George Carlin"
+    },
+    {
+      "id": 13,
+      "quote": "Behind every great man is a woman rolling her eyes.",
+      "author": "Jim Carrey"
+    },
+    {
+      "id": 14,
+      "quote": "I used to sell furniture for a living. The trouble was, it was my own.",
+      "author": "Les Dawson"
+    },
+    {
+      "id": 15,
+      "quote": "My fake plants died because I did not pretend to water them.",
+      "author": "Mitch Hedberg"
+    },
+    {
+      "id": 16,
+      "quote": "I am not afraid of death, I just don't want to be there when it happens.",
+      "author": "Woody Allen"
+    },
+    {
+      "id": 17,
+      "quote": "A day without laughter is a day wasted.",
+      "author": "Charlie Chaplin"
+    },
+    {
+      "id": 18,
+      "quote": "If you think you are too small to make a difference, try sleeping with a mosquito.",
+      "author": "Dalai Lama"
+    },
+    {
+      "id": 19,
+      "quote": "Age is of no importance unless you’re a cheese.",
+      "author": "Billie Burke"
+    },
+    {
+      "id": 20,
+      "quote": "If you’re going to do something tonight that you’ll be sorry for tomorrow morning, sleep late.",
+      "author": "Henny Youngman"
+    },
+    {
+      "id": 21,
+      "quote": "I'm not arguing, I'm just telling you why you're wrong.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 22,
+      "quote": "Insanity is hereditary; you get it from your children.",
+      "author": "Sam Levenson"
+    },
+    {
+      "id": 23,
+      "quote": "My therapist says I have a preoccupation with vengeance. We’ll see about that.",
+      "author": "Stewart Francis"
+    },
+    {
+      "id": 24,
+      "quote": "I told the doctor I broke my arm in two places. He told me to stop going to those places.",
+      "author": "Henny Youngman"
+    },
+    {
+      "id": 25,
+      "quote": "I find it ironic that the colors red, white, and blue stand for freedom until they are flashing behind you.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 26,
+      "quote": "Why don’t you slip into something more comfortable, like a coma.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 27,
+      "quote": "My opinions may have changed, but not the fact that I am right.",
+      "author": "Ashleigh Brilliant"
+    },
+    {
+      "id": 28,
+      "quote": "I'm not saying I hate you, but I would unplug your life support to charge my phone.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 29,
+      "quote": "I love deadlines. I like the whooshing sound they make as they fly by.",
+      "author": "Douglas Adams"
+    },
+    {
+      "id": 30,
+      "quote": "If you think nobody cares if you’re alive, try missing a couple of car payments.",
+      "author": "Earl Wilson"
+    },
+    {
+      "id": 31,
+      "quote": "A bank is a place that will lend you money if you can prove that you don’t need it.",
+      "author": "Bob Hope"
+    },
+    {
+      "id": 32,
+      "quote": "I’m on a whiskey diet. I’ve lost three days already.",
+      "author": "Tommy Cooper"
+    },
+    {
+      "id": 33,
+      "quote": "Why is there so much month left at the end of the money?",
+      "author": "John Barrymore"
+    },
+    {
+      "id": 34,
+      "quote": "The early bird gets the worm, but the second mouse gets the cheese.",
+      "author": "Steven Wright"
+    },
+    {
+      "id": 35,
+      "quote": "Common sense is like deodorant. The people who need it most never use it.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 36,
+      "quote": "Some people just need a high-five. In the face. With a chair.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 37,
+      "quote": "I'm on a seafood diet. I see food and I eat it.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 38,
+      "quote": "I could agree with you, but then we’d both be wrong.",
+      "author": "Harvey Specter"
+    },
+    {
+      "id": 39,
+      "quote": "I didn’t fail the test. I just found 100 ways to do it wrong.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "id": 40,
+      "quote": "I'm not lazy, I'm on energy-saving mode.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 41,
+      "quote": "Sometimes I drink water to surprise my liver.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 42,
+      "quote": "I used to be indecisive, but now I'm not sure.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 43,
+      "quote": "My bed is a magical place where I suddenly remember everything I forgot to do.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 44,
+      "quote": "Doing nothing is hard, you never know when you're done.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 45,
+      "quote": "If you’re not supposed to eat at night, why is there a light bulb in the refrigerator?",
+      "author": "Anonymous"
+    },
+    {
+      "id": 46,
+      "quote": "Do not take life too seriously. You will never get out of it alive.",
+      "author": "Elbert Hubbard"
+    },
+    {
+      "id": 47,
+      "quote": "I intend to live forever. So far, so good.",
+      "author": "Steven Wright"
+    },
+    {
+      "id": 48,
+      "quote": "Life is short. Smile while you still have teeth.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 49,
+      "quote": "My wife and I were happy for twenty years. Then we met.",
+      "author": "Rodney Dangerfield"
+    },
+    {
+      "id": 50,
+      "quote": "I haven’t spoken to my wife in years. I didn’t want to interrupt her.",
+      "author": "Rodney Dangerfield"
+    },
+    {
+      "id": 51,
+      "quote": "My mother always used to say: The older you get, the better you get, unless you’re a banana.",
+      "author": "Betty White"
+    },
+    {
+      "id": 52,
+      "quote": "When life gives you lemons, squirt someone in the eye.",
+      "author": "Cathy Guisewite"
+    },
+    {
+      "id": 53,
+      "quote": "If you want your children to listen, try talking softly to someone else.",
+      "author": "Ann Landers"
+    },
+    {
+      "id": 54,
+      "quote": "If you think you are too small to be effective, you have never been in bed with a mosquito.",
+      "author": "Bette Reese"
+    },
+    {
+      "id": 55,
+      "quote": "If you're too open-minded; your brains will fall out.",
+      "author": "Lawrence Ferlinghetti"
+    },
+    {
+      "id": 56,
+      "quote": "I love being married. It’s so great to find one special person you want to annoy for the rest of your life.",
+      "author": "Rita Rudner"
+    },
+    {
+      "id": 57,
+      "quote": "If at first you don't succeed, try, try again. Then quit. No use being a damn fool about it.",
+      "author": "W.C. Fields"
+    },
+    {
+      "id": 58,
+      "quote": "Always borrow money from a pessimist. He won’t expect it back.",
+      "author": "Oscar Wilde"
+    },
+    {
+      "id": 59,
+      "quote": "A clear conscience is a sure sign of a bad memory.",
+      "author": "Mark Twain"
+    },
+    {
+      "id": 60,
+      "quote": "Never put off until tomorrow what you can do the day after tomorrow.",
+      "author": "Mark Twain"
+    },
+    {
+      "id": 61,
+      "quote": "I didn’t fight my way to the top of the food chain to be a vegetarian.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 62,
+      "quote": "It’s not true that I had nothing on. I had the radio on.",
+      "author": "Marilyn Monroe"
+    },
+    {
+      "id": 63,
+      "quote": "I am so old that my blood type is discontinued.",
+      "author": "Bill Dane"
+    },
+    {
+      "id": 64,
+      "quote": "Wine is constant proof that God loves us and loves to see us happy.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "id": 65,
+      "quote": "The difference between stupidity and genius is that genius has its limits.",
+      "author": "Albert Einstein"
+    },
+    {
+      "id": 66,
+      "quote": "Men marry women with the hope they will never change. Women marry men with the hope they will change. Invariably they are both disappointed.",
+      "author": "Albert Einstein"
+    },
+    {
+      "id": 67,
+      "quote": "Any pizza is a personal pizza if you try hard enough and believe in yourself.",
+      "author": "Bill Murray"
+    },
+    {
+      "id": 68,
+      "quote": "A stockbroker is someone who invests your money until it’s all gone.",
+      "author": "Woody Allen"
+    },
+    {
+      "id": 69,
+      "quote": "Money can’t buy happiness, but it sure makes misery easier to live with.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 70,
+      "quote": "If you think nobody cares whether you’re alive, try missing a couple of payments.",
+      "author": "Earl Wilson"
+    },
+    {
+      "id": 71,
+      "quote": "Everything is funny, as long as it’s happening to somebody else.",
+      "author": "Will Rogers"
+    },
+    {
+      "id": 72,
+      "quote": "A rich man is nothing but a poor man with money.",
+      "author": "W.C. Fields"
+    },
+    {
+      "id": 73,
+      "quote": "You know you’re getting old when you stoop to tie your shoelaces and wonder what else you can do while you’re down there.",
+      "author": "George Burns"
+    },
+    {
+      "id": 74,
+      "quote": "There is no sunrise so beautiful that it is worth waking me up to see it.",
+      "author": "Mindy Kaling"
+    },
+    {
+      "id": 75,
+      "quote": "People who think they know everything are a great annoyance to those of us who do.",
+      "author": "Isaac Asimov"
+    },
+    {
+      "id": 76,
+      "quote": "If two wrongs don't make a right, try three.",
+      "author": "Laurence J. Peter"
+    },
+    {
+      "id": 77,
+      "quote": "If you're going to tell people the truth, be funny or they'll kill you.",
+      "author": "Billy Wilder"
+    },
+    {
+      "id": 78,
+      "quote": "All the things I really like to do are either immoral, illegal or fattening.",
+      "author": "Alexander Woollcott"
+    },
+    {
+      "id": 79,
+      "quote": "I'm not superstitious, but I am a little stitious.",
+      "author": "Michael Scott"
+    },
+    {
+      "id": 80,
+      "quote": "The road to success is dotted with many tempting parking spaces.",
+      "author": "Will Rogers"
+    },
+    {
+      "id": 81,
+      "quote": "My favorite machine at the gym is the vending machine.",
+      "author": "Caroline Rhea"
+    },
+    {
+      "id": 82,
+      "quote": "Knowledge is knowing a tomato is a fruit; wisdom is not putting it in a fruit salad.",
+      "author": "Miles Kington"
+    },
+    {
+      "id": 83,
+      "quote": "If you steal from one author, it’s plagiarism; if you steal from many, it’s research.",
+      "author": "Wilson Mizner"
+    },
+    {
+      "id": 84,
+      "quote": "You know you’ve reached middle age when you’re cautioned to slow down by your doctor, instead of by the police.",
+      "author": "Joan Rivers"
+    },
+    {
+      "id": 85,
+      "quote": "Don’t worry about the world coming to an end today. It is already tomorrow in Australia.",
+      "author": "Charles M. Schulz"
+    },
+    {
+      "id": 86,
+      "quote": "I was born to make mistakes, not to fake perfection.",
+      "author": "Drake"
+    },
+    {
+      "id": 87,
+      "quote": "The more you weigh, the harder you are to kidnap. Stay safe, eat cake.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 88,
+      "quote": "If you can’t remember my name, just say 'chocolate' and I’ll turn around.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 89,
+      "quote": "I am on a 30-day diet. So far, I’ve lost 15 days.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 90,
+      "quote": "I put my phone in airplane mode, but it’s not flying!",
+      "author": "Anonymous"
+    },
+    {
+      "id": 91,
+      "quote": "The best part of going to work is coming back home at the end of the day.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 92,
+      "quote": "It’s okay if you don’t like me. Not everyone has good taste.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 93,
+      "quote": "If at first you don’t succeed, destroy all evidence that you tried.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 94,
+      "quote": "I’m not lazy. I’m just on my energy saving mode.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 95,
+      "quote": "When nothing is going right, go left.",
+      "author": "Anonymous"
+    },
+    {
+      "id": 96,
+      "quote": "My therapist says I have a preoccupation with vengeance. We’ll see about that.",
+      "author": "Stewart Francis"
+    },
+    {
+      "id": 97,
+      "quote": "The only mystery in life is why the kamikaze pilots wore helmets.",
+      "author": "Al McGuire"
+    },
+    {
+      "id": 98,
+      "quote": "I am so clever that sometimes I don't understand a single word of what I am saying.",
+      "author": "Oscar Wilde"
+    },
+    {
+      "id": 99,
+      "quote": "I always wanted to be somebody, but now I realize I should have been more specific.",
+      "author": "Lily Tomlin"
+    },
+    {
+      "id": 100,
+      "quote": "War is God's way of teaching Americans geography.",
+      "author": "Ambrose Bierce"
+    }
+  ]
+}
