@@ -24,7 +24,7 @@ const contacts = await db.select().from(Contacts);
 
 <BaseLayout>
   <h1>Say Hi to me!</h1>
-  <form method="POST" action={actions.contact} ; id="contact-form">
+  <form method="POST" action={actions.contact}  id="contact-form">
     <div>
       <input required type="text" name="name" placeholder="Name" />
     </div>

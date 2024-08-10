@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import react from '@astrojs/react';
 
 import db from "@astrojs/db";
 
@@ -7,7 +8,7 @@ import db from "@astrojs/db";
 export default defineConfig({
   output: 'hybrid',
   site: 'http://localhost:4321',
-  integrations: [sitemap(), db()],
+  integrations: [sitemap(), db(), react()],
   experimental: {
     actions: true
   }

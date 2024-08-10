@@ -1,4 +1,5 @@
 ---
+import NewsletterSignup from '../components/NewsletterSignup';
 import BaseLayout from './BaseLayout.astro';
 
 //const { frontmatter } = Astro.props;
@@ -15,4 +16,6 @@ const {
   <h3>{description}</h3>
   <h4>{pubDate}</h4>
   <slot />
+  <NewsletterSignup client:load />
 </BaseLayout>
+
