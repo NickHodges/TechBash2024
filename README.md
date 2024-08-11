@@ -65,4 +65,3 @@
 ## Step 15
 
 * Server Islands
-*
