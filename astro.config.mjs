@@ -10,6 +10,7 @@ export default defineConfig({
   site: 'http://localhost:4321',
   integrations: [sitemap(), db(), react()],
   experimental: {
-    actions: true
+    actions: true,
+    serverIslands: true,
   }
 });

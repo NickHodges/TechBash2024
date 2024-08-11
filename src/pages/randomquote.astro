@@ -1,0 +1,13 @@
+---
+import QuoteComponent from '../components/QuoteComponent.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { fetchRandomQuote, type Quote } from '../utils/fetchQuote';
+
+const aQuote: Quote = await fetchRandomQuote();
+
+export const prerender = false;
+---
+
+<BaseLayout>
+  <QuoteComponent theQuote={aQuote} server:defer />
+</BaseLayout>

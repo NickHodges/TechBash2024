@@ -61,3 +61,8 @@
 * Integrate React
   * `npx astro add react`
 * Astro Client Islands
+
+## Step 15
+
+* Server Islands
+*
