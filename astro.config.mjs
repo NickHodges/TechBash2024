@@ -3,6 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 
 import db from "@astrojs/db";
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,5 +12,11 @@ export default defineConfig({
   integrations: [sitemap(), db(), react()],
   experimental: {
     actions: true
-  }
+  },
+  experimental: {
+    actions: true
+  },
+  adapter: node({
+    mode: "standalone"
+  })
 });

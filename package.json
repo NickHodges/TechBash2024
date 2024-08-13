@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.9.1",
     "@astrojs/db": "^0.12.0",
     "@astrojs/react": "^3.6.1",
+    "@astrojs/node": "^8.3.2",
     "@astrojs/sitemap": "^3.1.6",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

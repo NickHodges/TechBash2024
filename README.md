@@ -50,6 +50,7 @@
 
 * Add a basic contact form
 * Use Astro Actions to gather form data
+* Use node adapter
 
 ## Step 13
 
@@ -61,3 +62,4 @@
 * Integrate React
   * `npx astro add react`
 * Astro Client Islands
+
