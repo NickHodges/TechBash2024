@@ -12,9 +12,6 @@ export default defineConfig({
   experimental: {
     actions: true
   },
-  experimental: {
-    actions: true
-  },
   adapter: node({
     mode: "standalone"
   })
