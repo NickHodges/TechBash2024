@@ -1,5 +1,5 @@
 import express from 'express';
-import { Request, Response } from 'express';
+import { type Request, type Response } from 'express';
 import path from 'path';
 import fs from 'fs';
 
@@ -13,7 +13,7 @@ const quotes = JSON.parse(fs.readFileSync(quotesFilePath, 'utf-8')).quotes;
 const app = express();
 
 // Route to get a random quote
-app.get('/random-quote', (req: Request, res: Response) => {
+app.get('/random-quote', (res: Response) => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const randomQuote = quotes[randomIndex];
   res.json(randomQuote);
@@ -21,8 +21,10 @@ app.get('/random-quote', (req: Request, res: Response) => {
 
 // Route to get a quote by id
 app.get('/quote/:id', (req: Request, res: Response) => {
-  const id = parseInt(req.params.id, 10);
-  const quote = quotes.find((q: { id: number }) => q.id === id);
+  // const id: number | undefined = parseInt(req.params.id, 10);
+  const id: number | undefined = req.params.id ? parseInt(req.params.id, 10) : undefined;
+
+  const quote: string | undefined = quotes.find((q: { id: number }) => q.id === id);
 
   if (quote) {
     res.json(quote);
