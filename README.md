@@ -50,6 +50,8 @@
 
 * Add a basic contact form
 * Use Astro Actions to gather form data
+* Use node adapter
+  * `npx astro add node`
 
 ## Step 13
 

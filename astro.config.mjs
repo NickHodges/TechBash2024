@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
+import node from "@astrojs/node";
 
 import db from "@astrojs/db";
 
@@ -12,5 +13,8 @@ export default defineConfig({
   experimental: {
     actions: true,
     serverIslands: true,
-  }
+  },
+  adapter: node({
+    mode: "standalone"
+  })
 });
