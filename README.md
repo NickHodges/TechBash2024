@@ -55,3 +55,4 @@
 ## Step 13
 
 * Write contact information to AstroDB
+  * `npx astro add db`
