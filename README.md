@@ -4,5 +4,4 @@
 
 Show page-based routing
 
-## Step 2
 
