@@ -1,25 +1,10 @@
 ---
+import { db, Contacts } from 'astro:db';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { actions } from 'astro:actions';
-import { NOW } from 'astro:db';
-
-export const prerender = false;
-
-import { db, Contacts } from 'astro:db';
-
-if (Astro.request.method === 'POST') {
-  // parse form data
-  const formData = await Astro.request.formData();
-  const name = formData.get('name');
-  const email = formData.get('email');
-  const message = formData.get('message');
-  const timestamp = NOW;
-  if (typeof name === 'string' && typeof email === 'string' && typeof message === 'string') {
-    await db.insert(Contacts).values({ timestamp, name, email, message });
-  }
-}
 
 const contacts = await db.select().from(Contacts);
+export const prerender = false;
 ---
 
 <BaseLayout>

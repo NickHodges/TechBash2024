@@ -1,4 +1,5 @@
 import { defineAction, z } from "astro:actions";
+import { db, Contacts, NOW } from 'astro:db';
 
 export const server = {
   contact: defineAction({
@@ -9,7 +10,10 @@ export const server = {
       message: z.string(),
     }),
     handler: async ({ name, email, message }) => {
-      console.log('Received contact form submission: ', { name, email, message });
+      const timestamp = NOW;
+      if (typeof name === 'string' && typeof email === 'string' && typeof message === 'string') {
+        await db.insert(Contacts).values({ timestamp, name, email, message });
+      }
       return { success: true };
     },
   }),
