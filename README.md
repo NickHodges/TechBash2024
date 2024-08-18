@@ -66,3 +66,8 @@
 ## Step 15
 
 * Server Islands
+
+## Step 16
+
+* Fetch data from an API
+  
