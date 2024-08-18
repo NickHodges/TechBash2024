@@ -1,5 +1,5 @@
 ---
-import type { Quote } from "../utils/fetchQuote";
+import type { Quote } from '../utils/fetchQuote';
 
 interface QuoteProps {
   theQuote: Quote;
@@ -10,7 +10,7 @@ const { theQuote } = Astro.props as QuoteProps;
 
 <div class="quote-container">
   <blockquote>
-    <p><a href=`/quote/${theQuote.id}`>#</a> "{theQuote.quote}"</p>
+    <p><a href=`/quote/${theQuote.id}`>🔗</a> "{theQuote.quote}"</p>
     <footer>— {theQuote.author}</footer>
   </blockquote>
 </div>
