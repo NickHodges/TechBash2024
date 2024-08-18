@@ -1,4 +1,5 @@
 export interface Quote {
+  id: number;
   quote: string;
   author: string;
 }
@@ -19,6 +20,7 @@ export async function fetchRandomQuote(): Promise<Quote> {
     }
 
     return {
+      id: data.id,
       quote: data.quote,
       author: data.author,
     };
@@ -39,6 +41,7 @@ export async function fetchQuote(id: string | undefined): Promise<Quote> {
   }
   const data = await response.json();
   return {
+    id: data.id,
     quote: data.quote,
     author: data.author,
   };
