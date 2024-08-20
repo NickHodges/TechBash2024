@@ -75,5 +75,4 @@
 
 ## Step 16
 
-* Fetch data from an API
-  
+* 
