@@ -8,6 +8,7 @@
 ## Step 1
 
 * Show page-based routing
+  * Be sure to point out directories are paths
 
 ## Step 2
 
