@@ -21,6 +21,21 @@ branches=(
     "Step17"
 )
 
+# Check if the --step or --incoming flags are passed
+step_mode=false
+incoming_mode=false
+
+for arg in "$@"; do
+    case $arg in
+        --step)
+            step_mode=true
+            ;;
+        --incoming)
+            incoming_mode=true
+            ;;
+    esac
+done
+
 # Iterate over the branches array
 for (( i=1; i<${#branches[@]}; i++ )); do
     previous_branch=${branches[$((i-1))]}
@@ -29,20 +44,21 @@ for (( i=1; i<${#branches[@]}; i++ )); do
     echo "Checking out $current_branch..."
     git checkout $current_branch
 
-    echo "Merging $previous_branch into $current_branch..."
-    git merge $previous_branch -m "Merging in $previous_branch"
+    if [ "$incoming_mode" = true ]; then
+        echo "Merging $previous_branch into $current_branch with incoming changes..."
+        git merge -X theirs $previous_branch -m "Merging in $previous_branch with incoming changes"
+    else
+        echo "Merging $previous_branch into $current_branch..."
+        git merge $previous_branch -m "Merging in $previous_branch"
+    fi
 
     if [ $? -ne 0 ]; then
         echo "Merge conflict detected. Resolve the conflict and then run the script again."
         exit 1
     fi
 
-    echo "Pushing $current_branch to remote..."
-    git push origin $current_branch
-
-    if [ $? -ne 0 ]; then
-        echo "Failed to push $current_branch. Please check your remote repository settings and try again."
-        exit 1
+    if [ "$step_mode" = true ]; then
+        read -p "Press Enter to continue to the next branch..."
     fi
 done
 
