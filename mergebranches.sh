@@ -18,7 +18,6 @@ branches=(
     "Step14"
     "Step15"
     "Step16"
-    "Step17"
 )
 
 # Iterate over the branches array
