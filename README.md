@@ -12,9 +12,6 @@
 
 ## Step 2
 
-* Basic component structure
-* Basic use of props
-
-## Step 3
-
-* Components using the `<slot>` tag
+* Show basic component structure
+  * Show use of props
+  * Discuss destructuring
