@@ -12,5 +12,6 @@
 
 ## Step 2
 
-* Basic component structure
-* Basic use of props
+* Show basic component structure
+  * Show use of props
+  * Discuss destructuring
