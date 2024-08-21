@@ -21,11 +21,20 @@ branches=(
     "Step17"
 )
 
-# Check if the --step flag is passed
+# Check if the --step or --incoming flags are passed
 step_mode=false
-if [[ "$1" == "--step" ]]; then
-    step_mode=true
-fi
+incoming_mode=false
+
+for arg in "$@"; do
+    case $arg in
+        --step)
+            step_mode=true
+            ;;
+        --incoming)
+            incoming_mode=true
+            ;;
+    esac
+done
 
 # Iterate over the branches array
 for (( i=1; i<${#branches[@]}; i++ )); do
@@ -35,8 +44,13 @@ for (( i=1; i<${#branches[@]}; i++ )); do
     echo "Checking out $current_branch..."
     git checkout $current_branch
 
-    echo "Merging $previous_branch into $current_branch..."
-    git merge $previous_branch -m "Merging in $previous_branch"
+    if [ "$incoming_mode" = true ]; then
+        echo "Merging $previous_branch into $current_branch with incoming changes..."
+        git merge -X theirs $previous_branch -m "Merging in $previous_branch with incoming changes"
+    else
+        echo "Merging $previous_branch into $current_branch..."
+        git merge $previous_branch -m "Merging in $previous_branch"
+    fi
 
     if [ $? -ne 0 ]; then
         echo "Merge conflict detected. Resolve the conflict and then run the script again."
