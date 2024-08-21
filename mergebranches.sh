@@ -21,6 +21,12 @@ branches=(
     "Step17"
 )
 
+# Check if the --step flag is passed
+step_mode=false
+if [[ "$1" == "--step" ]]; then
+    step_mode=true
+fi
+
 # Iterate over the branches array
 for (( i=1; i<${#branches[@]}; i++ )); do
     previous_branch=${branches[$((i-1))]}
@@ -35,6 +41,10 @@ for (( i=1; i<${#branches[@]}; i++ )); do
     if [ $? -ne 0 ]; then
         echo "Merge conflict detected. Resolve the conflict and then run the script again."
         exit 1
+    fi
+
+    if [ "$step_mode" = true ]; then
+        read -p "Press Enter to continue to the next branch..."
     fi
 done
 
