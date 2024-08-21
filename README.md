@@ -84,3 +84,7 @@
   * It's an avatar that delay loads
     * It doesn't hold up the page
     * It renders on the server, despite being "customized"
+
+## Step 17
+
+* Integrate MDX into application
