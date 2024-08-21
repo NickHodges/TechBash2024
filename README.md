@@ -88,3 +88,5 @@
 ## Step 17
 
 * Integrate MDX into application
+  * `npx astro add mdx`
+  * Use `client:visible`
