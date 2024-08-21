@@ -77,3 +77,10 @@
 * Run express-quotes-api project
   * https://github.com/NickHodges/express-quotes-api
 * Choose random quote and build page for each quote via dynamic routing
+
+## Step 16
+
+* Add a server island
+  * It's an avatar that delay loads
+    * It doesn't hold up the page
+    * It renders on the server, despite being "customized"
