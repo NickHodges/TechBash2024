@@ -65,9 +65,11 @@
 
 ## Step 14
 
+* Astro Client Islands
+* Add newsletter signup component to bottom of all blogs
 * Integrate React
   * `npx astro add react`
-* Astro Client Islands
+
 
 ## Step 15
 
