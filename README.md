@@ -73,6 +73,7 @@
 
 ## Step 15
 
-* Server Islands
-
-## Step 16
+* Add quotes from a Quote API
+* Run express-quotes-api project
+  * https://github.com/NickHodges/express-quotes-api
+* Choose random quote and build page for each quote via dynamic routing
