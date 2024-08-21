@@ -35,6 +35,14 @@ for (( i=1; i<${#branches[@]}; i++ )); do
         echo "Merge conflict detected. Resolve the conflict and then run the script again."
         exit 1
     fi
+
+    echo "Pushing $current_branch to remote..."
+    git push origin $current_branch
+
+    if [ $? -ne 0 ]; then
+        echo "Failed to push $current_branch. Please check your remote repository settings and try again."
+        exit 1
+    fi
 done
 
-echo "All merges completed successfully!"
+echo "All merges and pushes completed successfully!"
