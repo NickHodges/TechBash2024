@@ -14,6 +14,7 @@
 
 * Basic component structure
 * Basic use of props
+  * Explain destructuring
 
 ## Step 3
 
@@ -47,3 +48,46 @@
 ## Step 10
 
 * Adding logging middleware
+
+## Step 11
+
+* Adding View Transitions
+
+## Step 12
+
+* Add a basic contact form
+* Use Astro Actions to gather form data
+* Use node adapter
+  * `npx astro add node`
+
+## Step 13
+
+* Write contact information to AstroDB
+  * `npx astro add db`
+
+## Step 14
+
+* Astro Client Islands
+* Add newsletter signup component to bottom of all blogs
+* Integrate React
+  * `npx astro add react`
+
+## Step 15
+
+* Add quotes from a Quote API
+* Run express-quotes-api project
+  * https://github.com/NickHodges/express-quotes-api
+* Choose random quote and build page for each quote via dynamic routing
+
+## Step 16
+
+* Add a server island
+  * It's an avatar that delay loads
+    * It doesn't hold up the page
+    * It renders on the server, despite being "customized"
+
+## Step 17
+
+* Integrate MDX into application
+  * `npx astro add mdx`
+  * Use `client:visible`
