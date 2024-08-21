@@ -5,8 +5,8 @@ const NewsletterSignup: React.FC = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
-    // Add your form submission logic here
     console.log('Email submitted:', email);
+    setEmail(''); // Clear the input field after submission
   };
 
   return (
@@ -22,7 +22,10 @@ const NewsletterSignup: React.FC = () => {
           placeholder="Enter your email"
           required
         />
-        <button style={styles.signupButton} type="submit">
+        <button
+          style={styles.signupButton}
+          type="submit"
+        >
           Subscribe
         </button>
       </form>
