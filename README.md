@@ -96,4 +96,9 @@
 
 ## Step 18
 
-* Show how the `<image>` tag sizes images for you
+* Show the Astro `<Image>` tag
+  * Note how it converts and sizes images for efficiency
+
+## Step 19
+
+* 
