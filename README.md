@@ -23,6 +23,8 @@
 ## Step 4
 
 * Integrating a layout
+* Build a menu
+  * Show how components can be embedded in components
 
 ## Step 5
 
@@ -91,3 +93,12 @@
 * Integrate MDX into application
   * `npx astro add mdx`
   * Use `client:visible`
+
+## Step 18
+
+* Show the Astro `<Image>` tag
+  * Note how it converts and sizes images for efficiency
+
+## Step 19
+
+* 
