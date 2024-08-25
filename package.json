@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && ASTRO_DATABASE_FILE=./src/data/TechBash2024.db   astro build",
+    "build": "npm run clean && astro check && ASTRO_DATABASE_FILE=./src/data/TechBash2024.db   astro build",
+    "clean": "rm -rf .astro && rm -rf dist",
     "preview": "astro preview",
     "astro": "astro"
   },
