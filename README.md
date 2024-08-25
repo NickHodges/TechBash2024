@@ -101,4 +101,10 @@
 
 ## Step 19
 
-* 
+* Authentication
+  * Using auth.js community integration
+
+## Step 20
+
+* Use pagination with the blog
+  * Add 15 more posts, page them 4 at a time.....
