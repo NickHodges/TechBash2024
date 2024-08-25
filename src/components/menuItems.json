@@ -1,5 +1,6 @@
 [
   { "name": "Home", "link": "/" },
   { "name": "Blog", "link": "/blog" },
-  { "name": "Contact", "link": "/contact" }
+  { "name": "Contact", "link": "/contact" },
+  { "name": "Random Quote", "link": "/randomquote"}
 ]
