@@ -5,13 +5,11 @@ import node from "@astrojs/node";
 import db from "@astrojs/db";
 import mdx from "@astrojs/mdx";
 
-import auth from "auth-astro";
-
 // https://astro.build/config
 export default defineConfig({
   output: 'hybrid',
   site: 'http://localhost:4321',
-  integrations: [sitemap(), db(), react(), mdx(), auth()],
+  integrations: [sitemap(), db(), react(), mdx()],
   experimental: {
     actions: true,
     serverIslands: true
