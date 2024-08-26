@@ -3,7 +3,6 @@ import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import node from "@astrojs/node";
 import db from "@astrojs/db";
-
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
