@@ -1,47 +1,110 @@
-# Astro Starter Kit: Minimal
+# Astro for Rank Beginners
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Introduction
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+* Review the structure of an empty Astro application
+  * Discuss purpose and structure of each file that was created
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Step 1
 
-## 🚀 Project Structure
+* Show page-based routing
+  * Be sure to point out directories are paths
 
-Inside of your Astro project, you'll see the following folders and files:
+## Step 2
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+* Basic component structure
+* Basic use of props
+  * Explain destructuring
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Step 3
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+* Components using the `<slot>` tag
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Step 4
 
-## 🧞 Commands
+* Integrating a layout
+* Build a menu
+  * Show how components can be embedded in components
 
-All commands are run from the root of the project, from a terminal:
+## Step 5
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+*Adding styles to components and the site
 
-## 👀 Want to learn more?
+## Step 6
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+* Display markdown content as a page
+
+## Step 7
+
+* Add a blog section via content collections
+
+## Step 8
+
+*  Add a blog post summary page
+
+## Step 9
+
+* Add a Sitemap integtration
+  * `npm install @astrojs/sitemap`
+
+## Step 10
+
+* Adding logging middleware
+
+## Step 11
+
+* Adding View Transitions
+
+## Step 12
+
+* Add a basic contact form
+* Use Astro Actions to gather form data
+* Use node adapter
+  * `npx astro add node`
+
+## Step 13
+
+* Write contact information to AstroDB
+  * `npx astro add db`
+
+## Step 14
+
+* Astro Client Islands
+* Add newsletter signup component to bottom of all blogs
+* Integrate React
+  * `npx astro add react`
+
+## Step 15
+
+* Add quotes from a Quote API
+* Run express-quotes-api project
+  * https://github.com/NickHodges/express-quotes-api
+* Choose random quote and build page for each quote via dynamic routing
+
+## Step 16
+
+* Add a server island
+  * It's an avatar that delay loads
+    * It doesn't hold up the page
+    * It renders on the server, despite being "customized"
+
+## Step 17
+
+* Integrate MDX into application
+  * `npx astro add mdx`
+  * Use `client:visible`
+
+## Step 18
+
+* Show the Astro `<Image>` tag
+  * Note how it converts and sizes images for efficiency
+
+## Step 19
+
+* Authentication
+  * Using auth.js community integration
+
+## Step 20
+
+* Use pagination with the blog
+  * Add 15 more posts, page them 4 at a time.....
