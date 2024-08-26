@@ -20,6 +20,8 @@ branches=(
     "Step16"
     "Step17"
     "Step18"
+    "Step19"
+    "Step20"
 )
 
 # Check if the --step or --incoming flags are passed
