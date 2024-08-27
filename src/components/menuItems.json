@@ -2,6 +2,6 @@
   { "name": "Home", "link": "/" },
   { "name": "Blog", "link": "/blog" },
   { "name": "Contact", "link": "/contact" },
-  { "name": "Random Quotes", "link": "/randomlink"},
+  { "name": "Random Quotes", "link": "/randomquote"},
   { "name": "Images", "link": " /images"}
 ]
