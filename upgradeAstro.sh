@@ -1,18 +1,19 @@
 #!/bin/bash
 
-# Check if npx is installed
-if ! command -v npx &> /dev/null
+# Check if npm is installed
+if ! command -v npm &> /dev/null
 then
-    echo "npx could not be found, please install Node.js and npm first."
-    exit
+    echo "npm could not be found. Please install Node.js and npm first."
+    exit 1
 fi
 
-# Run the Astro upgrade command
-npx @astrojs/upgrade
+# Install or update Astro globally to the latest version
+echo "Installing or updating Astro to the latest version globally..."
+npm install astro@latest
 
 # Check if the command was successful
 if [ $? -eq 0 ]; then
-    echo "Astro upgrade completed successfully."
+    echo "Astro has been upgraded to the latest version globally."
 else
-    echo "Astro upgrade failed. Please check the error messages above."
+    echo "Failed to upgrade Astro. Please check the error messages above."
 fi
