@@ -25,4 +25,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+src/data
+package-lock.json
 
