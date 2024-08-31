@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { GetStaticPaths } from 'astro';
+import Paginator from '../../components/Paginator.astro';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const blogEntries = await getCollection('blog');
+  const paginatedPosts = paginate(blogEntries, { pageSize: 4 });
+  return paginatedPosts;
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+
+const paginationProps = {
+  ...(page.url.prev && {
+    prevUrl: {
+      text: '← Previous Posts',
+      url: page.url.prev,
+    },
+  }),
+  ...(page.url.next && {
+    nextUrl: {
+      text: 'Next Posts →',
+      url: page.url.next,
+    },
+  }),
+};
+---
+
+<BaseLayout>
+  <div>
+    <Paginator {...paginationProps} />
+    <h2>Page {page.currentPage}</h2>
+    <ul>
+      <!--List the array of blog post info-->
+      {
+        page.data.map((post) => (
+          <li>
+            <h4>
+              <a href={`/blog/${post.slug}/`}>{post.data.title}</a> - {post.data.pubDate.toDateString()}
+            </h4>
+            <p>{post.data.description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>
+
+) }
+
