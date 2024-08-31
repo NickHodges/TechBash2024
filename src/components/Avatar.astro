@@ -1,12 +1,22 @@
 ---
+function generateRandomString(length: number): string {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  const charactersLength = characters.length;
+  let result = '';
+
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * charactersLength);
+    result += characters[randomIndex];
+  }
+
+  return result;
+}
+
 const fetchAvatar = async (): Promise<string> => {
   await new Promise((res) => setTimeout(res, 1500));
 
-  const avatars = ['/man.png', '/woman.png', '/NickAvatar.jpg'];
-  const randomIndex = Math.floor(Math.random() * avatars.length);
-
-  const avatar = avatars[randomIndex] ?? '/NickAvatar.png';
-
+  const randomString = generateRandomString(7);
+  const avatar = `https://robohash.org/${randomString}?size=88x88`;
   return avatar;
 };
 
