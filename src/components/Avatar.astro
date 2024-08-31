@@ -1,5 +1,5 @@
 ---
-function generateRandomString(length: number = 10): string {
+function generateRandomString(length: number): string {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
   const charactersLength = characters.length;
   let result = '';
@@ -15,8 +15,8 @@ function generateRandomString(length: number = 10): string {
 const fetchAvatar = async (): Promise<string> => {
   await new Promise((res) => setTimeout(res, 1500));
 
-  const randomString = generateRandomString(); // Generates a random 10-character string
-  const avatar = `https://robohash.org/${randomString}?size=88x88`; // Constructs the URL using the random string
+  const randomString = generateRandomString(7);
+  const avatar = `https://robohash.org/${randomString}?size=88x88`;
   return avatar;
 };
 
