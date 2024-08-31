@@ -1,0 +1,34 @@
+---
+type PaginationLink = {
+  url: string;
+  text?: string;
+  srLabel?: string;
+};
+
+interface Props {
+  nextUrl?: PaginationLink;
+  prevUrl?: PaginationLink;
+}
+
+const { nextUrl, prevUrl } = Astro.props;
+---
+
+{
+  (prevUrl || nextUrl) && (
+    <nav>
+      {prevUrl && (
+        <a data-astro-prefetch href={prevUrl.url}>
+          {prevUrl.srLabel && <span class="sr-only">{prevUrl.srLabel}</span>}
+          {prevUrl.text ? prevUrl.text : 'Previous'}
+        </a>
+      )}
+      <span> | </span>
+      {nextUrl && (
+        <a data-astro-prefetch href={nextUrl.url}>
+          {nextUrl.srLabel && <span>{nextUrl.srLabel}</span>}
+          {nextUrl.text ? nextUrl.text : 'Next'}
+        </a>
+      )}
+    </nav>
+  )
+}
