@@ -1,0 +1,112 @@
+---
+import { Contacts, db } from 'astro:db';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { actions } from 'astro:actions';
+
+const contacts = await db.select().from(Contacts);
+export const prerender = false;
+---
+
+<BaseLayout>
+  <h1>Say Hi to me!</h1>
+  <form method="POST" action={actions.contact} id="contact-form">
+    <div>
+      <input required type="text" name="name" placeholder="Name" />
+    </div>
+    <div>
+      <input required type="email" name="email" placeholder="Email" />
+    </div>
+    <div>
+      <textarea name="message" placeholder="Message"></textarea>
+    </div>
+    <div>
+      <button>Send</button>
+    </div>
+  </form>
+  <hr />
+
+  {
+    contacts.map(({ name, email, message, timestamp }) => (
+      <article class="card">
+        <p>
+          <strong>Name:</strong> {name}
+        </p>
+        <p>
+          <strong>Email:</strong> {email}
+        </p>
+        <p>
+          <strong>Date:</strong> {timestamp}
+        </p>
+        <p>
+          <strong>Message:</strong> {message}
+        </p>
+      </article>
+    ))
+  }
+</BaseLayout>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+
+  form div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #b5e352;
+  }
+  .card p {
+    margin: 8px 0;
+  }
+  .card p strong {
+    font-weight: bold;
+  }
+</style>
