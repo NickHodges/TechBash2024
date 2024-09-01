@@ -1,5 +1,19 @@
 # Astro for Rank Beginners
 
+## The purpose
+
+This repository is desiged for a daylong workshop on Astro.  It's called "Astro for Rank Beginners" because it basically assumes that you know very little about how Astro works. Each step in the repository is a building block on the previous step, an each step covers a specific aspect of Astro.
+
+At the end, a student should have a basic idea how Astro sites are built.
+
+## How the repository works.
+
+This repository is designed as a tutorial about Astro.  Each step -- and there are currently 20 -- is branched from the previous one and builds on what is there.  So, for example, Step 3 illustrates the use of the `<slot>` element, and then Step 4 branches from Step 3 and uses everything in the previous Steps while adding new code.
+
+### Some things to note:
+
+* Since a change in one step will need to be included in all subsequent steps, there is a file in each branch called `mergebranches.sh` that migrates code from step to step.
+
 ## Introduction
 
 * Review the structure of an empty Astro application
@@ -23,6 +37,8 @@
 ## Step 4
 
 * Integrating a layout
+* Build a menu
+  * Show how components can be embedded in components
 
 ## Step 5
 
@@ -91,3 +107,13 @@
 * Integrate MDX into application
   * `npx astro add mdx`
   * Use `client:visible`
+
+## Step 18
+
+* Show the Astro `<Image>` tag
+  * Note how it converts and sizes images for efficiency
+
+## Step 19
+
+* Use pagination with the blog
+  * Add 15 more posts, page them 4 at a time
