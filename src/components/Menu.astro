@@ -1,0 +1,14 @@
+---
+import menuItems from './menuItems.json';
+
+interface MenuItem {
+  name: string;
+  link: string;
+}
+
+const items: MenuItem[] = menuItems as MenuItem[];
+---
+
+<p>
+  {items.map((item) => <a href={item.link}>{item.name}</a>).reduce((prev, curr) => [prev, ' | ', curr])}
+</p>
