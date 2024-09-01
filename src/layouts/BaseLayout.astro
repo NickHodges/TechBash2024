@@ -1,7 +1,8 @@
 ---
 import '../styles/global.css';
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="en">
@@ -11,10 +12,13 @@ import Header from "../components/Header.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
+    <ViewTransitions />
   </head>
   <body>
-    <Header title="My Cool Website"/>
-    <slot />
+    <Header title="My Cool Website" />
+    <main transition:animate="slide">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>
