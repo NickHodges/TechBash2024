@@ -8,7 +8,7 @@ import node from "@astrojs/node";
 export default defineConfig({
   output: 'hybrid',
   site: 'https://127.0.0.1:4321',
-  integrations: [sitemap(), db()],
+  integrations: [sitemap()],
   experimental: {
     actions: true
   },
