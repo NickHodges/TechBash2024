@@ -1,6 +1,4 @@
 
-// requestLoggerMiddleware.ts
-
 import { defineMiddleware } from 'astro:middleware';
 import { ConsoleLogger } from './utils/consoleLogger';
 // Instantiate the logger
