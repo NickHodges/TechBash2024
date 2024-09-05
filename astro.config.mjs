@@ -13,8 +13,6 @@ export default defineConfig({
   experimental: {
     serverIslands: true,
   },
-  site: 'https://127.0.0.1:4321',
-  integrations: [sitemap(), db()],
   adapter: node({
     mode: "standalone"
   })
