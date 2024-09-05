@@ -9,9 +9,6 @@ export default defineConfig({
   output: 'hybrid',
   site: 'https://127.0.0.1:4321',
   integrations: [sitemap(), db()],
-  experimental: {
-    actions: true
-  },
   adapter: node({
     mode: "standalone"
   })
