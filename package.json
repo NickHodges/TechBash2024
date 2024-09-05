@@ -11,10 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.3",
-    "@astrojs/db": "^0.13.1",
-    "@astrojs/mdx": "^3.1.4",
+    "@astrojs/db": "^0.14.0",
     "@astrojs/node": "^8.3.3",
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/mdx": "^3.1.4",
     "@astrojs/react": "^3.6.2",
     "@astrojs/sitemap": "^3.1.6",
     "@auth/core": "^0.32.0",
@@ -22,8 +22,6 @@
     "@types/react-dom": "^18.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "@astrojs/db": "^0.14.0",
-    "@astrojs/node": "^8.3.3",
     "astro": "^4.15.3",
     "typescript": "^5.5.4"
   }
