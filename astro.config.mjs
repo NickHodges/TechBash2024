@@ -11,9 +11,10 @@ export default defineConfig({
   site: 'http://localhost:4321',
   integrations: [sitemap(), db(), react(), mdx()],
   experimental: {
-    actions: true,
-    serverIslands: true
+    serverIslands: true,
   },
+  site: 'https://127.0.0.1:4321',
+  integrations: [sitemap(), db()],
   adapter: node({
     mode: "standalone"
   })
