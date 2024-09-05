@@ -1,6 +1,7 @@
 ---
-import { db, Contacts } from "astro:db";
+import { Contacts, db } from "astro:db";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { actions } from "astro:actions";
 
 
 const contacts = await db.select().from(Contacts);
