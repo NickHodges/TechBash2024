@@ -1,5 +1,5 @@
 import { defineAction } from "astro:actions";
-import { db } from "astro:db";
+import { Contacts, db, NOW } from "astro:db";
 import { z } from 'astro:schema';
 
 export const server = {
