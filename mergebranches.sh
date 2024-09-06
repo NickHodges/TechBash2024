@@ -2,6 +2,7 @@
 
 # Array of branches in the order they should be merged
 branches=(
+    "main"
     "Step1"
     "Step2"
     "Step3"
