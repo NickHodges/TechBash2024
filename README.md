@@ -6,11 +6,11 @@ This repository is desiged for a daylong workshop on Astro.  It's called "Astro 
 
 At the end, a student should have a basic idea how Astro sites are built.
 
-## How the repository works.
+## How the repository works
 
 This repository is designed as a tutorial about Astro.  Each step -- and there are currently 20 -- is branched from the previous one and builds on what is there.  So, for example, Step 3 illustrates the use of the `<slot>` element, and then Step 4 branches from Step 3 and uses everything in the previous Steps while adding new code.
 
-### Some things to note:
+### Some things to note
 
 * Since a change in one step will need to be included in all subsequent steps, there is a file in each branch called `mergebranches.sh` that migrates code from step to step.
 
@@ -54,7 +54,7 @@ This repository is designed as a tutorial about Astro.  Each step -- and there a
 
 ## Step 8
 
-*  Add a blog post summary page
+* Add a blog post summary page
 
 ## Step 9
 
@@ -92,7 +92,7 @@ This repository is designed as a tutorial about Astro.  Each step -- and there a
 
 * Add quotes from a Quote API
 * Run express-quotes-api project
-  * https://github.com/NickHodges/express-quotes-api
+  * [https://github.com/NickHodges/express-quotes-api]([https://](https://github.com/NickHodges/express-quotes-api))
 * Choose random quote and build page for each quote via dynamic routing
 
 ## Step 16
