@@ -29,6 +29,7 @@ branches=(
 step_mode=false
 incoming_mode=false
 build_mode=false
+merge_mode=false
 
 # Parse command-line arguments
 for arg in "$@"; do
@@ -42,8 +43,17 @@ for arg in "$@"; do
         --build)
             build_mode=true
             ;;
+        --merge)
+            merge_mode=true
+            ;;
     esac
 done
+
+# Check if no relevant flags are set
+if [ "$merge_mode" = false ] && [ "$build_mode" = false ]; then
+    echo "Nothing will be done because no flags are set."
+    exit 0
+fi
 
 # Iterate over the branches array
 for (( i=1; i<${#branches[@]}; i++ )); do
@@ -53,21 +63,24 @@ for (( i=1; i<${#branches[@]}; i++ )); do
     echo "Checking out $current_branch..."
     git checkout $current_branch
 
-    if [ "$incoming_mode" = true ]; then
-        echo "Merging $previous_branch into $current_branch with incoming changes..."
-        git merge -X theirs $previous_branch -m "Merging in $previous_branch with incoming changes"
-    else
-        echo "Merging $previous_branch into $current_branch..."
-        git merge $previous_branch -m "Merging in $previous_branch"
+    # Merge branches only if the --merge flag is set
+    if [ "$merge_mode" = true ]; then
+        if [ "$incoming_mode" = true ]; then
+            echo "Merging $previous_branch into $current_branch with incoming changes..."
+            git merge -X theirs $previous_branch -m "Merging in $previous_branch with incoming changes"
+        else
+            echo "Merging $previous_branch into $current_branch..."
+            git merge $previous_branch -m "Merging in $previous_branch"
+        fi
+
+        # Check for merge conflicts
+        if [ $? -ne 0 ]; then
+            echo "Merge conflict detected. Resolve the conflict and then run the script again."
+            exit 1
+        fi
     fi
 
-    # Check for merge conflicts
-    if [ $? -ne 0 ]; then
-        echo "Merge conflict detected. Resolve the conflict and then run the script again."
-        exit 1
-    fi
-
-    # If build flag is set, run npm build
+    # Run build command if --build flag is set
     if [ "$build_mode" = true ]; then
         echo "Running npm run build for $current_branch..."
         npm run build
@@ -83,4 +96,4 @@ for (( i=1; i<${#branches[@]}; i++ )); do
     fi
 done
 
-echo "All merges, pushes, and builds completed successfully!"
+echo "Operation completed successfully!"
