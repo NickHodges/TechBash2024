@@ -1,8 +1,7 @@
 ---
-import { Contacts, db } from "astro:db";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { actions } from "astro:actions";
-
+import { Contacts, db } from 'astro:db';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { actions } from 'astro:actions';
 
 const contacts = await db.select().from(Contacts);
 export const prerender = false;
@@ -12,6 +11,10 @@ export const prerender = false;
   <h1>Say Hi to me!</h1>
   <form method="POST" action={actions.contact} id="contact-form">
     <div>
+      <input required type="text" name="name" placeholder="Name" />
+    </div>
+    <div>
+      <input required type="email" name="email" placeholder="Email" />
     </div>
     <div>
       <textarea name="message" placeholder="Message"></textarea>
