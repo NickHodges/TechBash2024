@@ -1,4 +1,5 @@
 import { defineAction } from "astro:actions";
+import { NOW, db, Contacts } from "astro:db";
 import { z } from 'astro:schema';
 
 export const server = {
@@ -10,7 +11,9 @@ export const server = {
       message: z.string(),
     }),
     handler: async ({ name, email, message }) => {
-      console.log('Contact Info -- ', 'Name: ', name, 'Email: ', email, '', 'Message: ', message);
+      const timestamp = NOW;
+
+     await db.insert(Contacts).values({ timestamp, name, email, message });
       return { success: true };
     },
   }),
