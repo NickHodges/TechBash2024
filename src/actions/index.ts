@@ -12,11 +12,8 @@ export const server = {
     }),
     handler: async ({ name, email, message }) => {
       const timestamp = NOW;
+      await db.insert(Contacts).values({ timestamp, name, email, message });
 
-     await db.insert(Contacts).values({ timestamp, name, email, message });
-      const timestamp = NOW;
-
-     await db.insert(Contacts).values({ timestamp, name, email, message });
       return { success: true };
     },
   }),
