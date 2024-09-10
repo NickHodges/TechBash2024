@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "clean": "rm -rf .astro && rm -rf dist",
-    "build": "npm run clean && astro check && ASTRO_DATABASE_FILE=./src/data/TechBash2024.db astro build",
+    "build": "npm run clean && astro check && astro build --remote",
     "preview": "astro preview",
     "astro": "astro"
   },
