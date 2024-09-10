@@ -1,8 +1,7 @@
 ---
-import { Contacts, db } from "astro:db";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { actions } from "astro:actions";
-
+import { Contacts, db } from 'astro:db';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { actions } from 'astro:actions';
 
 const contacts = await db.select().from(Contacts);
 export const prerender = false;
@@ -21,7 +20,6 @@ export const prerender = false;
     </div>
   </form>
   <hr />
-
   {
     contacts.map(({ name, email, message, timestamp }) => (
       <article class="card">
