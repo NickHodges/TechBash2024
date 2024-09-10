@@ -14,6 +14,9 @@ export const server = {
       const timestamp = NOW;
 
      await db.insert(Contacts).values({ timestamp, name, email, message });
+      const timestamp = NOW;
+
+     await db.insert(Contacts).values({ timestamp, name, email, message });
       return { success: true };
     },
   }),
