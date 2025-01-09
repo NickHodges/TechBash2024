@@ -3,7 +3,6 @@ import type { GetStaticPaths } from 'astro';
 import BlogPostLayout from '../../layouts/BlogPostLayout.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-
 export const getStaticPaths = (async () => {
   const blogEntries = await getCollection('blog');
   return blogEntries.map((entry: CollectionEntry<'blog'>) => ({
@@ -14,6 +13,8 @@ export const getStaticPaths = (async () => {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+export const prerender = true;
 ---
 
 <BlogPostLayout frontmatter={entry.data}>

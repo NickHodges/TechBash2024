@@ -13,25 +13,27 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { page } = Astro.props;
 
 const paginationProps = {
-  ...(page.url.prev && {
+  ...(page?.url.prev && {
     prevUrl: {
       text: '← Previous Posts',
       url: page.url.prev,
     },
   }),
-  ...(page.url.next && {
+  ...(page?.url.next && {
     nextUrl: {
       text: 'Next Posts →',
       url: page.url.next,
     },
   }),
 };
+
+export const prerender = true;;
 ---
 
 <BaseLayout>
   <div>
     <Paginator {...paginationProps} />
-    <h2>Page {page.currentPage}</h2>
+    <h2>Page {page?.currentPage}</h2>
     <ul>
       <!--List the array of blog post info-->
       {
